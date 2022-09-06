@@ -1,0 +1,64 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,17 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Terminamos el crud basico de nuestra entidad empresa">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/repo/EmpleadoRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpleadoService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpleado.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpleado.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpleados.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empleado.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empresa.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/MovimientoDinero.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -32,6 +23,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="JpbToolWindowState">
+@@ -74,7 +70,8 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "last_opened_file_path": "/Users/ozzyta/IdeaProjects/Ciclo3Udea2022/src/main/resources/templates"
++    "last_opened_file_path": "/Users/ozzyta/IdeaProjects/Ciclo3Udea2022/src/main/resources/templates",
++    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/application.properties b/src/main/resources/application.properties
+--- a/src/main/resources/application.properties	
++++ b/src/main/resources/application.properties	
+@@ -1,4 +1,4 @@
+ spring.datasource.url=jdbc:postgresql://localhost:5432/ciclo3
+ spring.datasource.username=postgres
+-spring.datasource.password=12345
++spring.datasource.password=123
+ spring.jpa.hibernate.ddl-auto=update
+\ No newline at end of file

@@ -16,8 +16,9 @@ public class MovimientoDinero {
     @ManyToOne
     @JoinColumn(name = "empleado_id")
     private Empleado usuario;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date fecha; //AAAA-MM-DD o //AAAA/MM/DD solo
+
+    @DateTimeFormat(pattern="yyyy-MM-dd")
+    private Date fecha;
 
     public MovimientoDinero() {
     }
@@ -26,8 +27,7 @@ public class MovimientoDinero {
         this.monto = monto;
         this.concepto = concepto;
         this.usuario = empleado;
-        this.fecha = fecha;
-
+        this.fecha=fecha;
     }
 
     public int getId() {

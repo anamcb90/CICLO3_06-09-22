@@ -20,6 +20,8 @@
 <body>
 
 <div class="container">
+    <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
     <h1> Agregue aqui los datos del Movimiento</h1>
     <br>
     <!--Crear formulario para llenar los datos del movimiento y guardarlo en el objeto mov -->
@@ -53,7 +55,6 @@
             </div>
         </div>
 
-
         <!--Campo para empleado (usuario responsable)-->
         <div class="row">
             <div class="form-group col-md-12">
@@ -76,6 +77,8 @@
         </div>
 
 
+
+
         <!--Boton para enviar todo y ejecutar accion -->
         <div class="row">
             <div class="col-md-2">
@@ -89,12 +92,12 @@
     <a href="javascript: history.go(-1)" class="btn btn-info" role="button">Atrás</a>
 
 </div>
-
 <script th:inline="javascript">
   window.onload=function(){
   document.getElementById("fecha").value=new Date().toJSON().slice(0,10).replace(/-/g,'-');
   }
 </script>
+
 
 </body>
 </html>
